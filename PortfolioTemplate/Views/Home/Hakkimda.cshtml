@@ -1,0 +1,24 @@
+﻿@model IEnumerable<SosyalMedya>
+@{
+    var item = Model.FirstOrDefault();
+}
+
+<section class="resume-section" id="about">
+
+    <div class="resume-section-content">
+        <h1 class="mb-0">
+            @item.Hakkimda.Ad <span class="text-primary">@item.Hakkimda.Soyad</span>
+        </h1>
+        <div class="subheading mb-5">
+            @item.Hakkimda.Adres · @item.Hakkimda.Telefon ·
+            <a href="mailto:@item.Hakkimda.Mail">@item.Hakkimda.Mail</a>
+        </div>
+        <p class="lead mb-5">@item.Hakkimda.Aciklama</p>
+        <div class="social-icons">
+            @foreach (var items in Model)
+            {
+                <a class="social-icon" href="@items.Link"><i class="fab @items.Icon"></i></a>
+            }
+        </div>
+    </div>
+</section>

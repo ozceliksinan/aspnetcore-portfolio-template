@@ -1,0 +1,49 @@
+﻿@model PortfolioTemplate.Models.Hakkimda
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Hakkımda Güncelle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="HakkimdaGuncelle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="HakkimdaId" value="@Model.HakkimdaId" readonly>
+            </div>
+            <div class="form-group">
+                <label>Ad</label>
+                <input type="text" class="form-control" name="Ad" value="@Model.Ad">
+            </div>
+            <div class="form-group">
+                <label>Soyad</label>
+                <input type="text" class="form-control" name="Soyad" value="@Model.Soyad">
+            </div>
+            <div class="form-group">
+                <label>Adres</label>
+                <input type="text" class="form-control" name="Adres" value="@Model.Adres">
+            </div>
+            <div class="form-group">
+                <label>Telefon</label>
+                <input type="text" class="form-control" name="Telefon" value="@Model.Telefon">
+            </div>
+            <div class="form-group">
+                <label>Mail</label>
+                <input type="text" class="form-control" name="Mail" value="@Model.Mail">
+            </div>
+            <div class="form-group">
+                <label>Aciklama</label>
+                <input type="text" class="form-control" name="Aciklama" value="@Model.Aciklama">
+            </div>
+            <div class="form-group">
+                <label>Resim</label>
+                <input type="text" class="form-control" name="Resim" value="@Model.Resim">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Deneyimler>
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Deneyim Ekle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="DeneyimEkle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>Başlık</label>
+                <input type="text" class="form-control" name="Baslik">
+            </div>
+            <div class="form-group">
+                <label>Alt Başlık</label>
+                <input type="text" class="form-control" name="AltBaslik">
+            </div>
+            <div class="form-group">
+                <label>Açıklama</label>
+                <textarea class="form-control" name="Aciklama" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Tarih</label>
+                <input type="date" class="form-control" name="Tarih">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

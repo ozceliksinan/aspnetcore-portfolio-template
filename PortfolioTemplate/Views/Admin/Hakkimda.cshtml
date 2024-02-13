@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SosyalMedya>
+@{
+    Layout = "_AdminLayout";
+    var item = Model.FirstOrDefault();
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Hakkımda</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-bordered table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Adres</th>
+        <th>Telefon</th>
+        <th>Mail</th>
+        <th>Aciklama</th>
+        <th>Resim</th>
+        <th>Düzenle</th>
+    </tr>
+    <tr>
+        <td>@item.Hakkimda.HakkimdaId</td>
+        <td>@item.Hakkimda.Ad</td>
+        <td>@item.Hakkimda.Soyad</td>
+        <td>@item.Hakkimda.Adres</td>
+        <td>@item.Hakkimda.Telefon</td>
+        <td>@item.Hakkimda.Mail</td>
+        <td>@item.Hakkimda.Aciklama</td>
+        <td>@item.Hakkimda.Resim</td>
+        <td><a asp-controller="Admin" asp-action="HakkimdaGuncelle" asp-route-id="@item.Hakkimda.HakkimdaId" class="btn btn-info">Düzenle</a></td>
+    </tr>
+</table>
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Sosyal Medya Listesi</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-bordered table-responsive">
+    <tr>
+        <th>Hakkımda ID</th>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>Link</th>
+        <th>Görsel</th>
+        <th>Ön İzleme</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var items in Model)
+    {
+        <tr>
+            <td>@items.Hakkimda.HakkimdaId</td>
+            <td>@items.SosyalMedyaId</td>
+            <td>@items.Ad</td>
+            <td>@items.Link</td>
+            <td>@items.Icon</td>
+            <td><i class="nav-icon fab @items.Icon"></i></td>
+            <td><a asp-controller="Admin" asp-action="SosyalMedyaGuncelle" asp-route-id="@items.SosyalMedyaId" class="btn btn-info">Düzenle</a></td>
+            <td><a asp-controller="Admin" asp-action="SosyalMedyaSil" asp-route-id="@items.SosyalMedyaId" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Admin" asp-action="SosyalMedyaEkle" class="btn btn-primary">Yeni Sosyal Medya Ekle</a>

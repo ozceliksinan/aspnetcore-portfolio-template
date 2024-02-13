@@ -1,0 +1,41 @@
+﻿@model PortfolioTemplate.Models.Egitim
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Eğitim Güncelle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="EgitimGuncelle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="EgitimId" value="@Model.EgitimId" readonly>
+            </div>
+            <div class="form-group">
+                <label>Üniversite Adı</label>
+                <input type="text" class="form-control" name="Baslik" value="@Model.Baslik">
+            </div>
+            <div class="form-group">
+                <label>Fakülte</label>
+                <input type="text" class="form-control" name="AltBaslik1" value="@Model.AltBaslik1">
+            </div>
+            <div class="form-group">
+                <label>Bölüm</label>
+                <input type="text" class="form-control" name="AltBaslik2" value="@Model.AltBaslik2">
+            </div>
+            <div class="form-group">
+                <label>Genel Not Ortalaması</label>
+                <input type="text" class="form-control" name="GNO" value="@Model.GNO">
+            </div>
+            <div class="form-group">
+                <label>Tarih</label>
+                <input type="date" class="form-control" name="Tarih" value="@Model.Tarih.ToString("yyyy-MM-dd")">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

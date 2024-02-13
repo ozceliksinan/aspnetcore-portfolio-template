@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Sertifikalarim>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Sertifikalarım</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="timeline">
+                    @foreach (var item in Model)
+                    {
+                        <div class="time-label">
+                            <span class="bg-success">@item.Tarih</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-award bg-blue"></i>
+                            <div class="timeline-item">
+                                <div class="timeline-body">
+                                    @item.Aciklama
+                                </div>
+                                <div class="timeline-footer">
+                                    <a asp-controller="Admin" asp-action="SertifikaGuncelle" asp-route-id="@item.SertifikalarimId" class="btn btn-primary btn-sm">Düzenle</a>
+                                    <a asp-controller="Admin" asp-action="SertifikaSil" asp-route-id="@item.SertifikalarimId" class="btn btn-danger btn-sm">Sil</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a asp-controller="Admin" asp-action="SertifikaEkle" class="btn btn-primary">Yeni Sertifika Ekle</a>

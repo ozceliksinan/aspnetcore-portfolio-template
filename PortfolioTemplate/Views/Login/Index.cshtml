@@ -1,0 +1,39 @@
+﻿@model UserSignInViewModel
+
+@{
+    Layout = "_LoginLayout";
+}
+
+<div class="login-box">
+    <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+            <a asp-controller="Home" asp-action="Index" class="h1"><b>Portfolyo</b> Sitesi</a>
+        </div>
+        <div class="card-body">
+            <p class="login-box-msg">Bir hesabın var mı?</p>
+            <form method="post" asp-action="Index">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Kullanıcı Adınızı Giriniz..." asp-for="@Model.username">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Şifrenizi Giriniz..." asp-for="@Model.password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Portfolio Template" />
+    <meta name="author" content="Sinan Özçelik" />
+    <title>Sinan Özçelik - Portfolio Template</title>
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png" alt="Sinan Özçelik" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Hakkımda</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Deneyimlerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Eğitimlerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Yeteneklerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Hobilerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Sertifikalarım</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">İletisim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        @RenderBody()
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+    @* SweetAlert için script *@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // TempData'da SweetAlert mesajları varsa göster
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var sweetAlertMessage = '@TempData["SweetAlertMessage"]';
+            var sweetAlertTitle = '@TempData["SweetAlertTitle"]';
+            var sweetAlertText = '@TempData["SweetAlertText"]';
+            var SweetAlertConfirmText = '@TempData["SweetAlertConfirmText"]';
+
+            if (sweetAlertMessage) {
+                Swal.fire({
+                    icon: sweetAlertMessage,
+                    title: sweetAlertTitle,
+                    text: sweetAlertText,
+                    confirmButtonText: SweetAlertConfirmText
+                });
+            }
+        });
+    </script>
+</body>
+</html>
