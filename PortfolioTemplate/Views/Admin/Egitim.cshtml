@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Egitim>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Eğitimlerim</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-bordered table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>Üniversite Adı</th>
+        <th>Fakülte</th>
+        <th>Bölüm</th>
+        <th>GNO</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.EgitimId</td>
+            <td>@item.Baslik</td>
+            <td>@item.AltBaslik1</td>
+            <td>@item.AltBaslik2</td>
+            <td>@item.GNO</td>
+            <td>@item.Tarih</td>
+            <td><a asp-controller="Admin" asp-action="EgitimSil" asp-route-id="@item.EgitimId" class="btn btn-danger">Sil</a></td>
+            <td><a asp-controller="Admin" asp-action="EgitimGuncelle" asp-route-id="@item.EgitimId" class="btn btn-info">Düzenle</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Admin" asp-action="EgitimEkle" class="btn btn-primary">Yeni Eğitim Ekle</a>

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sinan Özçelik">
+    <title>Site Yönetim Paneli</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="/Admin/" class="brand-link">
+                <span class="brand-text font-weight-light">Site Yönetim Paneli</span>
+            </a>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Index" class="nav-link">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>Anasayfa</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Hakkimda" class="nav-link">
+                                <i class="nav-icon fas fa-address-book"></i>
+                                <p>Hakkımda</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Deneyim" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>Deneyimlerim</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Egitim" class="nav-link">
+                                <i class="nav-icon fas fa-school"></i>
+                                <p>Eğitimlerim</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Yetenek" class="nav-link">
+                                <i class="nav-icon fas fa-pencil-ruler"></i>
+                                <p>Yeteneklerim</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Hobiler" class="nav-link">
+                                <i class="nav-icon fas fa-gamepad"></i>
+                                <p>Hobilerim</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Sertifika" class="nav-link">
+                                <i class="nav-icon fas fa-award"></i>
+                                <p>Sertifikalarım</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Iletisim" class="nav-link">
+                                <i class="nav-icon fas fa-mail-bulk"></i>
+                                <p>İletişim</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Admin" asp-action="Kullanici" class="nav-link">
+                                <i class="nav-icon fas fa-user-lock"></i>
+                                <p>Kullanıcılar</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </section>
+        </div>
+        <footer class="main-footer">
+            <strong>Copyright &copy; @DateTime.Now.Year <a href="https://github.com/ozceliksinan">Sinan Özçelik.</a></strong> All rights reserved.
+        </footer>
+    </div>
+    <script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/chart.js/Chart.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/sparklines/sparkline.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/moment/moment.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/dist/js/adminlte.js"></script>
+    <script src="https://adminlte.io/themes/v3/dist/js/pages/dashboard.js"></script>
+    @* SweetAlert için script *@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // TempData'da SweetAlert mesajları varsa göster
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var sweetAlertMessage = '@TempData["SweetAlertMessage"]';
+            var sweetAlertTitle = '@TempData["SweetAlertTitle"]';
+            var sweetAlertText = '@TempData["SweetAlertText"]';
+            var SweetAlertConfirmText = '@TempData["SweetAlertConfirmText"]';
+
+            if (sweetAlertMessage) {
+                Swal.fire({
+                    icon: sweetAlertMessage,
+                    title: sweetAlertTitle,
+                    text: sweetAlertText,
+                    confirmButtonText: SweetAlertConfirmText
+                });
+            }
+        });
+    </script>
+</body>
+</html>

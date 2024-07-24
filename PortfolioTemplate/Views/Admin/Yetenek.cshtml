@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Yeteneklerim>
+@{
+    Layout = "_AdminLayout";
+}
+@{
+    string progressBarRenk = "";
+    string labelRenk = "";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Yetenek Listesi</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 10px">ID</th>
+                    <th>Yetenek Adı</th>
+                    <th>Derece</th>
+                    <th style="width: 40px">Oran</th>
+                    <th>Sil</th>
+                    <th>Düzenle</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    if (item.Oran >= 0 && item.Oran <= 50)
+                    {
+                        progressBarRenk = "progress-bar bg-danger";
+                        labelRenk = "badge bg-danger";
+                    }
+                    if (item.Oran >= 51 && item.Oran <= 70)
+                    {
+                        progressBarRenk = "progress-bar bg-warning";
+                        labelRenk = "badge bg-warning";
+                    }
+                    if (item.Oran >= 71 && item.Oran <= 84)
+                    {
+                        progressBarRenk = "progress-bar bg-primary";
+                        labelRenk = "badge bg-primary";
+                    }
+                    if (item.Oran >= 85 && item.Oran <= 100)
+                    {
+                        progressBarRenk = "progress-bar bg-success";
+                        labelRenk = "badge bg-success";
+                    }
+                    <tr>
+                        <td>@item.YeteneklerimId</td>
+                        <td>@item.Yetenek</td>
+                        <td>
+                            <div class="progress progress-xs">
+                                <div class="@progressBarRenk" style="width: @item.Oran%"></div>
+                            </div>
+                        </td>
+                        <td><span class="@labelRenk">@item.Oran</span></td>
+                        <td><a asp-controller="Admin" asp-action="YetenekSil" asp-route-id="@item.YeteneklerimId" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Sil</a></td>
+                        <td><a asp-controller="Admin" asp-action="YetenekGuncelle" asp-route-id="@item.YeteneklerimId" class="btn btn-info btn-sm"><i class="fas fa-pencil-alt"></i> Düzenle</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a asp-controller="Admin" asp-action="YetenekEkle" class="btn btn-primary">Yeni Yetenek Ekle</a>

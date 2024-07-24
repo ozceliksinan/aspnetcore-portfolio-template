@@ -1,0 +1,61 @@
+﻿@model UserSignUpViewModel
+@{
+    Layout = "_LoginLayout";
+}
+
+<div class="login-box">
+    <div class="card card-outline card-primary">
+        <div class="card-header text-center">
+            <h2><b>Kayıt Ol</b></h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Index" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Adınızı Soyadınızı Giriniz..." asp-for="@Model.nameSurname">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="far fa-address-card"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Kullanıcı Adınızı Giriniz..." asp-for="@Model.UserName">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="far fa-address-card"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="E-Posta Adresinizi Giriniz..." asp-for="@Model.Mail">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Şifrenizi Giriniz..." asp-for="@Model.Password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Şifrenizi Tekrar Giriniz..." asp-for="@Model.Password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">Kayıt Ol</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Deneyimler>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Deneyimlerim</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-bordered table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Alt Başlık</th>
+        <th>Açıklama</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.DeneyimlerId</td>
+            <td>@item.Baslik</td>
+            <td>@item.AltBaslik</td>
+            <td>@item.Aciklama</td>
+            <td>@item.Tarih</td>
+            <td><a asp-controller="Admin" asp-action="DeneyimSil" asp-route-id="@item.DeneyimlerId" class="btn btn-danger">Sil</a></td>
+            <td><a asp-controller="Admin" asp-action="DeneyimGuncelle" asp-route-id="@item.DeneyimlerId" class="btn btn-info">Düzenle</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Admin" asp-action="DeneyimEkle" class="btn btn-primary">Yeni Deneyim Ekle</a>

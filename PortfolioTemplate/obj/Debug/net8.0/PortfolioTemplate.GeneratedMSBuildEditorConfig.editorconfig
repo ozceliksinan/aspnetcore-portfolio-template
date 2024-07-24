@@ -1,0 +1,167 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PortfolioTemplate
+build_property.RootNamespace = PortfolioTemplate
+build_property.ProjectDir = C:\Users\Sinan\Desktop\Bitmiş GitHub\simple-aspnetcore-portfolio-template\PortfolioTemplate\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Sinan\Desktop\Bitmiş GitHub\simple-aspnetcore-portfolio-template\PortfolioTemplate
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Deneyim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVuZXlpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/DeneyimEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVuZXlpbUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/DeneyimGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVuZXlpbUd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Egitim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWdpdGltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/EgitimEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWdpdGltRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/EgitimGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWdpdGltR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Hakkimda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGFra2ltZGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/HakkimdaGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGFra2ltZGFHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Hobiler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9iaWxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSWxldGlzaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Kullanici.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Sertifika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydGlmaWthLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/SertifikaEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydGlmaWthRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/SertifikaGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydGlmaWthR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/SosyalMedyaEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU29zeWFsTWVkeWFFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/SosyalMedyaGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU29zeWFsTWVkeWFHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/Yetenek.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cWWV0ZW5lay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/YetenekEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cWWV0ZW5la0VrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Admin/YetenekGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cWWV0ZW5la0d1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Deneyim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW5leWltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Egitim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZ2l0aW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Hakkimda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtraW1kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Hobilerim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb2JpbGVyaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbGV0aXNpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Sertifikalarim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ0aWZpa2FsYXJpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Home/Yeteneklerim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxZZXRlbmVrbGVyaW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/RegisterUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJVc2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sinan/Desktop/Bitmiş GitHub/simple-aspnetcore-portfolio-template/PortfolioTemplate/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nlthu7jqyw

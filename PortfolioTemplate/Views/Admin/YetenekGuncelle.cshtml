@@ -1,0 +1,29 @@
+﻿@model PortfolioTemplate.Models.Yeteneklerim
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Yetenek Güncelle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="YetenekGuncelle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="YeteneklerimId" value="@Model.YeteneklerimId" readonly>
+            </div>
+            <div class="form-group">
+                <label>Yetenek Adı</label>
+                <input type="text" class="form-control" name="Yetenek" value="@Model.Yetenek">
+            </div>
+            <div class="form-group">
+                <label>Yetenek Oranı</label>
+                <input type="text" class="form-control" name="Oran" value="@Model.Oran">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

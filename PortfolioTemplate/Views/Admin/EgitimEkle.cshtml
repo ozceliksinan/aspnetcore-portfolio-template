@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Egitim>
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Eğitim Ekle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="EgitimEkle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>Üniversite Adı</label>
+                <input type="text" class="form-control" name="Baslik">
+            </div>
+            <div class="form-group">
+                <label>Fakülte</label>
+                <input type="text" class="form-control" name="AltBaslik1">
+            </div>
+            <div class="form-group">
+                <label>Bölüm</label>
+                <input type="text" class="form-control" name="AltBaslik2">
+            </div>
+            <div class="form-group">
+                <label>Genel Not Ortalaması</label>
+                <input type="text" class="form-control" name="GNO">
+            </div>
+            <div class="form-group">
+                <label>Tarih</label>
+                <input type="date" class="form-control" name="Tarih">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

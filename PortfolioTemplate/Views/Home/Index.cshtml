@@ -1,0 +1,29 @@
+﻿@model PortfolioTemplate.Data.IndexViewModel
+
+<!-- About-->
+@Html.Partial("Hakkimda", Model.SosyalMedya)
+<!-- About-->
+<hr class="m-0" />
+<!-- Experience-->
+@Html.Partial("Deneyim", Model.Deneyimler)
+<!-- Experience-->
+<hr class="m-0" />
+<!-- Education-->
+@Html.Partial("Egitim", Model.Egitim)
+<!-- Education-->
+<hr class="m-0" />
+<!-- Skills-->
+@Html.Partial("Yeteneklerim", Model.Yeteneklerim)
+<!-- Skills-->
+<hr class="m-0" />
+<!-- Interests-->
+@Html.Partial("Hobilerim", Model.Hobilerim)
+<!-- Interests-->
+<hr class="m-0" />
+<!-- Awards-->
+@Html.Partial("Sertifikalarim", Model.Sertifikalarim)
+<!-- Awards-->
+<hr class="m-0" />
+<!-- Contact-->
+@Html.Partial("Iletisim", Model.Iletisim)
+<!-- Contact-->

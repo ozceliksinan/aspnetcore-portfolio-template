@@ -1,0 +1,37 @@
+﻿@model PortfolioTemplate.Models.Deneyimler
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Deneyim Güncelle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="DeneyimGuncelle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="DeneyimlerId" value="@Model.DeneyimlerId" readonly>
+            </div>
+            <div class="form-group">
+                <label>Başlık</label>
+                <input type="text" class="form-control" name="Baslik" value="@Model.Baslik">
+            </div>
+            <div class="form-group">
+                <label>Alt Başlık</label>
+                <input type="text" class="form-control" name="AltBaslik" value="@Model.AltBaslik">
+            </div>
+            <div class="form-group">
+                <label>Açıklama</label>
+                <textarea class="form-control" name="Aciklama" rows="3" >@Model.Aciklama</textarea>
+            </div>
+            <div class="form-group">
+                <label>Tarih</label>
+                <input type="date" class="form-control" name="Tarih" value="@Model.Tarih.ToString("yyyy-MM-dd")">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

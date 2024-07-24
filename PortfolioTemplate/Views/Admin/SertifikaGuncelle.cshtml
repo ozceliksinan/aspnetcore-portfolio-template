@@ -1,0 +1,29 @@
+﻿@model PortfolioTemplate.Models.Sertifikalarim
+@{
+    Layout = "_AdminLayout";
+}
+<br />
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Sertifika Güncelle</h3>
+    </div>
+    <form asp-controller="Admin" asp-action="SertifikaGuncelle" method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" name="SertifikalarimId" value="@Model.SertifikalarimId" readonly>
+            </div>
+            <div class="form-group">
+                <label>Açıklama</label>
+                <textarea class="form-control" name="Aciklama" rows="3">@Model.Aciklama</textarea>
+            </div>
+            <div class="form-group">
+                <label>Tarih</label>
+                <input type="date" class="form-control" name="Tarih" value="@Model.Tarih.ToString("yyyy-MM-dd")">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>
